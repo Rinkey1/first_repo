@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>Documentation Topics</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Getting_Started" class="nav-link">Getting Started</a>
+    <a href="#Installation" class="nav-link">Installation</a>
+    <a href="#Usage" class="nav-link">Usage</a>
+    <a href="#API_Reference" class="nav-link">API Reference</a>
+  </nav>
+
+  <!-- Main Documentation -->
+  <main id="main-doc">
+    <!-- Introduction Section -->
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>This section provides an introduction to the documentation.</p>
+      <p>The documentation covers all essential details about the product.</p>
+      <code>console.log('Introduction');</code>
+      <ul>
+        <li>Overview of the product</li>
+        <li>Main features</li>
+        <li>Use cases</li>
+      </ul>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section id="Getting_Started" class="main-section">
+      <header>Getting Started</header>
+      <p>Getting started guide to help you set up the product quickly.</p>
+      <p>Follow the steps below to initialize.</p>
+      <code>initializeApp(config);</code>
+      <ul>
+        <li>Step 1: Install dependencies</li>
+        <li>Step 2: Set up configuration</li>
+        <li>Step 3: Run the app</li>
+      </ul>
+    </section>
+
+    <!-- Installation Section -->
+    <section id="Installation" class="main-section">
+      <header>Installation</header>
+      <p>Learn how to install the product on different platforms.</p>
+      <p>Choose the installation that suits your setup.</p>
+      <code>npm install product-name</code>
+      <ul>
+        <li>For macOS</li>
+        <li>For Windows</li>
+        <li>For Linux</li>
+      </ul>
+    </section>
+
+    <!-- Usage Section -->
+    <section id="Usage" class="main-section">
+      <header>Usage</header>
+      <p>Usage guidelines for different functionalities of the product.</p>
+      <p>Examples on how to perform common tasks.</p>
+      <code>product.performTask('example');</code>
+      <ul>
+        <li>Task 1: Overview</li>
+        <li>Task 2: Usage details</li>
+        <li>Task 3: Additional info</li>
+      </ul>
+    </section>
+
+    <!-- API Reference Section -->
+    <section id="API_Reference" class="main-section">
+      <header>API Reference</header>
+      <p>API reference section for developers.</p>
+      <p>Details about available functions and methods.</p>
+      <code>product.getData(params);</code>
+      <ul>
+        <li>Method 1: Description</li>
+        <li>Method 2: Usage</li>
+        <li>Method 3: Return values</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Stylesheet -->
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Navbar Styles */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100vh;
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-size: 1.2em;
+      margin-bottom: 1rem;
+    }
+
+    .nav-link {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 0.5rem 0;
+    }
+
+    .nav-link:hover {
+      background-color: #555;
+    }
+
+    /* Main Document Styles */
+    #main-doc {
+      margin-left: 220px;
+      padding: 2rem;
+    }
+
+    .main-section {
+      margin-bottom: 2rem;
+    }
+
+    .main-section header {
+      font-size: 1.5em;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 0.5rem;
+    }
+
+    code {
+      display: block;
+      background: #f4f4f4;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+      margin: 0.5rem 0;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Media Query for Responsive Design */
+    @media (max-width: 768px) {
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+
+</body>
+</html>
